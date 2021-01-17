@@ -1,0 +1,39 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+	background-color: #383838;
+	
+}
+#logoPic {
+	margin-top: -10px;
+}
+.navbar-toggle {
+	margin-top: 70px;
+	height: 60px;
+}
+#nav-list a {
+	color: white;
+	font-size: 1em;
+	text-shadow: 2px 2px black;
+	text-align: center;
+  }
+
+#main-content {
+	margin-top: 75px;
+	margin-bottom: 0px;
+}
+.blogpost {
+	text-align: center;
+
+}
+footer {
+	color:white;
+	text-align: center;
+	font-size: .75em;
+	background-color: #383838;
+}
+footer .row {
+	margin:10px;
+}
