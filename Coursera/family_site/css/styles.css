@@ -1,0 +1,79 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+	background-color: white;
+}
+.navbar-header{
+	border: 0px;
+	text-align: center;
+	background-color: white;
+	height: 75px;
+	padding-top:10px;
+}
+.navbar H1 {
+	color: black;
+	text-shadow: 1px 1px gray;
+	margin-top: 3px;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header .navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #fff;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -50px;
+}
+
+.navbar-toggle {
+	margin-top:-30px;
+	border-color: black;
+}
+.navbar-collapse {
+	padding-right:0px;
+}
+@media (min-width: 768px){
+	.navbar-header {
+		height:0px;
+	}
+	.navbar-right {
+		margin-right:0px;
+		margin-top:-30px;
+	}
+}
+
+/* End Header */
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    font-size: 7vw;
+    padding-top:15px;
+  }
+  /* End Header */
+
+}
+
+.jumbotron {
+  box-shadow: 0 0 10px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  background-color:#34EBAB;
+  text-align: center;
+}
+footer {
+	text-align: center;
+	font-size: .75em;
+}

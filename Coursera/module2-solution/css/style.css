@@ -1,0 +1,70 @@
+* {
+  font-family:Arial;
+  font-size 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+	background-color:#dcfaf9;
+}
+h1	{
+	font-size:1.75em;
+	text-align:center;
+	margin:15px;
+}
+.container {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0;
+}
+p {
+	clear:right;
+}
+div.inside {
+	border:1px solid black;
+	border-radius:5px;
+	background-color:#b0ab9d;
+	margin:10px;
+	padding-left:10px;
+}
+#box {
+	float:left;
+}
+section {
+	text-align:center;
+	font-size:1.25em;
+	width:175px;
+	height:25px;
+	float:right;
+	border:2px solid black;
+	border-radius:5px;
+}
+#beef {
+	background-color:#00f715;
+}
+#sushi {
+	background-color:#f7ad00;
+}
+#chicken {
+	background-color:#6ea5ff;
+}
+@media (min-width: 992px) {
+	.col-lg-4 {
+	width:33.33%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		width:50%;
+	}
+	.col-md-12 {
+		width:100%;
+	}
+}
+@media (max-width: 767px) {
+	.col-sm-12 {
+		width:100%
+	}
+}
