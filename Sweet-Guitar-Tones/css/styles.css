@@ -1,6 +1,7 @@
 body {
 	box-sizing: border-box;
-	font-family: 'Ubuntu', sans-serif;
+	font-family:sans-serif;
+	background-color: white;
 }
 .navbar {
 	background-color: #383838;
@@ -26,7 +27,11 @@ body {
 }
 .blogpost {
 	text-align: center;
-
+}
+img {
+	width:90%;
+	max-width:750px;
+	height:auto;
 }
 footer {
 	color:white;
