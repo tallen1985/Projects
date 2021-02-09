@@ -78,19 +78,21 @@ footer {
         width:75%;
     }
 }
-/* Credentials */
-.credential {
+/* Credentials and Projects */
+.entry-box {
     height: 75px;
+    margin-top:15px;
 }
-.credential img {
+.entry-box img {
     float:left;
 }
-.cred-text {
+.entry-text {
     overflow:hidden;
+    padding-left:10px;
 }
-.creditial a:link {
+entry-box a:link {
     text-decoration: underline;
 }
-.credential a:hover {
+.entry-box a:hover {
     font-weight: bold;
 }
