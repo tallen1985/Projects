@@ -85,6 +85,9 @@ footer {
 .credential img {
     float:left;
 }
+.cred-text {
+    overflow:hidden;
+}
 .creditial a:link {
     text-decoration: underline;
 }
