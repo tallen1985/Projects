@@ -59,7 +59,7 @@ main {
     background-color: ivory;
 }
 main #main-picture {
-    background-image: url("/images/guitars.jpeg");
+    background-image: url("../images/guitars.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1000px;
