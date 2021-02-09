@@ -1,11 +1,11 @@
 body {
-    background-color: gainsboro;
+    background-color: cadetblue;
     font-family: Raleway;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: gainsboro;
+    background-color: cadetblue;
     height: 75px;
     margin: 0;
     padding-top: 22px;
@@ -55,7 +55,7 @@ nav a:hover {
 }
 
 main {
-    background-color: ivory;
+    background-color:silver;
 }
 main #main-box {
     
@@ -69,7 +69,7 @@ footer {
     padding-left: 25px;
     font-weight: 100;
 }
-
+/* Responsiveness */
 @media (max-width: 810px) {
     #logo-name h1{
         display: none;
@@ -77,4 +77,17 @@ footer {
     nav {
         width:75%;
     }
+}
+/* Credentials */
+.credential {
+    height: 75px;
+}
+.credential img {
+    float:left;
+}
+.creditial a:link {
+    text-decoration: underline;
+}
+.credential a:hover {
+    font-weight: bold;
 }
