@@ -1,0 +1,83 @@
+body {
+    background-color: gainsboro;
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: gainsboro;
+    height: 75px;
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 25px;
+    width:100%;
+}
+#logo-name {
+    display: inline;
+    font-size:17px;
+    font-weight:400;
+    opacity: .75;
+}
+#logo-name .fa-cat {
+    font-size: 40px;
+    width: 50px
+}
+#logo-name h1 {
+    display: inline;
+}
+nav {
+    float:right;
+    margin-right:30px;
+    padding-top:10px;
+    display:inline-block;
+    width: 350px;
+    
+}
+nav table {
+    width:100%;
+}
+nav td {
+    font-size: 20px;
+    font-weight:100;
+    width: 33.33%;
+    text-align:center;
+
+}
+nav a {
+    text-decoration: none;
+
+    color:black;
+}
+
+nav a:hover {
+    font-weight: 400;
+    opacity: 1.0;
+    color: black;
+}
+
+main {
+    background-color: ivory;
+}
+main #main-picture {
+    background-image: url("/images/guitars.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1000px;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    padding-top:10px;
+}
+footer {
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+@media (max-width: 810px) {
+    #logo-name h1{
+        display: none;
+    }
+    nav {
+        width:75%;
+    }
+}
