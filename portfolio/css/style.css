@@ -80,7 +80,7 @@ footer {
 }
 /* Credentials and Projects */
 .entry-box {
-    height: 75px;
+    display:block;
     margin-top:15px;
 }
 .entry-box img {
