@@ -61,7 +61,7 @@ main #main-box {
     
     max-width: 1000px;
     width: 90%;
-    height: 500px;
+    height: 400px;
     margin: auto;
     padding-top:10px;
 }
@@ -81,7 +81,10 @@ footer {
 /* Credentials and Projects */
 .entry-box {
     display:block;
-    margin-top:15px;
+    margin-top:30px;
+}
+.spacer {
+    height: 20px;
 }
 .entry-box img {
     float:left;
