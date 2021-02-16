@@ -17,7 +17,6 @@ header {
     font-size: 25px;
 }
 nav {
-    border: 1px solid black;
     width: 300px;
 }
 nav ul {
@@ -35,7 +34,6 @@ nav ul {
     float: right;
     width: 600px;
     height: 300px;
-    border: 1px solid black;
     font-family: monospace;
 }
 #content-area p {
