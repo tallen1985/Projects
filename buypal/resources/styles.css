@@ -9,7 +9,7 @@ a:link {
     color:#fdfffc;
     text-decoration: none;
 }
-a:hover {
+header a:hover {
     color:#2ec4b6;
 }
 /* Header */
@@ -37,9 +37,78 @@ header nav ul img {
     top:40px;
     border: 2px solid #065143;
     border-radius: 50%;
-    width:20%
+    width:20%;
+    max-width:150px;
 }
-
+/* Main Section */
+main {
+    width: 100%;
+    padding-top:90px;
+}
+main .big-container {
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    max-width: 1200px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    background-image: url("../images/ft-myers-stock.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.quote {
+    grid-area: 2 / 2 / span 1 / span 6;
+    background-color: #065143;
+    ;
+    border: 2px solid #065143;
+    border-radius: 10px;
+}
+.quote p {
+    color: #fdfffc;
+    ;
+    font-weight: 700;
+    font-style: italic;
+}
+.quote p:last-of-type {
+    text-align: right;
+    padding-right:10px;
+}
+/* Team Stuff */
+.team-container {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+}
+.team {
+    width:30%;
+    margin: 25px;
+}
+.troy {
+    width:30%;
+    height:250px;
+}
+.troy img {
+    width: 90%;
+}
+.ellen {
+    width:30%;
+    height:250px;
+}
+.ellen img {
+    width: 90%;
+}
+.lucy {
+    width:30%;
+    height:250px;
+}
+.lucy img {
+    width: 90%;
+}
+section {
+    margin-bottom: 250px;
+}
 /*Footer */
 footer{
     background-color: #065143;
