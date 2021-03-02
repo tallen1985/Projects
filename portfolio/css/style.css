@@ -67,14 +67,19 @@ a:visited {
 main {
     background-color:silver;
 }
-main #main-box {
+main #main-box, main #about-box{
 				
     max-width: 1000px;
     width: 90%;
     height: 400px;
     margin: auto;
     padding-top:10px;
-    overflow-y:hidden;
+}
+main #main-box {
+    overflow: hidden
+}
+main #about-box {
+    overflow-y: scroll;
 }
 #main-box #boxImage {
     margin-top: -50px;
@@ -105,7 +110,7 @@ footer {
         justify-content: space-around;
     }
     .navbar li {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 /* Credentials and Projects */
@@ -128,4 +133,9 @@ entry-box a:link {
 }
 .entry-box a:hover {
     font-weight: bold;
+}
+
+.about-logo {
+    width: 64px;
+    padding-right: 30px;
 }
