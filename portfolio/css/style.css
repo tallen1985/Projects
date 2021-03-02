@@ -10,7 +10,7 @@ header {
     margin: 0;
     padding-top: 22px;
     padding-left: 25px;
-    width:100%;
+    width:100%; 
 }
 #logo-name {
     display: inline;
@@ -25,32 +25,42 @@ header {
 #logo-name h1 {
     display: inline;
 }
+h4 {
+    font-size: 1.5rem;
+}
 nav {
-    float:right;
     margin-right:30px;
     padding-top:10px;
     display:inline-block;
-    width: 350px;
+    width: 50%;
     
 }
-nav table {
+nav .navbar {
     width:100%;
 }
-nav td {
+nav ul {
+    display:inline-flex;
     font-size: 20px;
     font-weight:100;
-    width: 33.33%;
     text-align:center;
-
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+    
 }
-a {
+
+a:link {
     text-decoration: none;
     color:black;
 }
 
-nav a:hover {
+a:hover {
     font-weight: 400;
     opacity: 1.0;
+    color: black;
+}
+
+a:visited {
     color: black;
 }
 
@@ -58,25 +68,44 @@ main {
     background-color:silver;
 }
 main #main-box {
-    
+				
     max-width: 1000px;
     width: 90%;
     height: 400px;
     margin: auto;
     padding-top:10px;
-    overflow-y:auto
+    overflow-y:hidden;
 }
+#main-box #boxImage {
+    margin-top: -50px;
+    width: 100%;
+    overflow: hidden;
+}
+
 footer {
     padding-left: 25px;
     font-weight: 300;
 }
 /* Responsiveness */
 @media (max-width: 810px) {
+    header {
+        height:fit-content;
+    }
     #logo-name h1{
         display: none;
     }
+    #logo-name .fa-cat {
+        font-size:30px;
+        width:fit-content;
+    }
     nav {
-        width:75%;
+        width:65%;
+    }
+    .nav ul {
+        justify-content: space-around;
+    }
+    .navbar li {
+        font-size: .8rem;
     }
 }
 /* Credentials and Projects */
