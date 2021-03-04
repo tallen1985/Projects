@@ -63,7 +63,13 @@ footer {
   box-shadow: 3px 3px 3px gray;
 }
 @media only screen and (max-width:600px) {
+  h1 {
+    font-size: 1.75em;
+  }
   main .factbox{
     width: 95%;
+  }
+  .contentbox {
+    margin: 0 auto;
   }
 }
