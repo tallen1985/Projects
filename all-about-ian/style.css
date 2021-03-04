@@ -50,6 +50,7 @@ main .factbox {
 }
 .contentbox {
   margin-left: 25px;
+  margin-right: 25px;
 }
 footer {
   display: block;
@@ -68,8 +69,5 @@ footer {
   }
   main .factbox{
     width: 95%;
-  }
-  .contentbox {
-    margin: 0 auto;
   }
 }
