@@ -73,7 +73,7 @@ main #main-box, main #about-box{
 				
     max-width: 1000px;
     width: 90%;
-    height: 400px;
+    height: 450px;
     margin: auto;
     padding-top:10px;
 }
@@ -92,6 +92,7 @@ main #about-box {
 footer {
     padding-left: 25px;
     font-weight: 300;
+    height:50px;
 }
 /* Responsiveness */
 @media (max-width: 810px) {
