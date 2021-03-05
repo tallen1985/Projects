@@ -1,5 +1,5 @@
 body {
-    background-color: cadetblue;
+    background-color: silver;
     font-family: Raleway;
     margin: 0;
     padding: 0;
@@ -90,9 +90,12 @@ main #about-box {
 }
 
 footer {
+    position: relative;
+    bottom:0px;
+    padding-top:20px;
+    font-weight: 400;
     padding-left: 25px;
-    font-weight: 300;
-    height:50px;
+    height:25px;
 }
 /* Responsiveness */
 @media (max-width: 810px) {
