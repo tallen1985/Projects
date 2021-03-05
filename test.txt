@@ -1,7 +1,0 @@
-This is a text document to test out Git
-
-<<<<<<< HEAD
-Messing it up again.
-=======
-I am purposely screwing this up.
->>>>>>> 63726504da1021a0d25a0c6806286260b01c0db9

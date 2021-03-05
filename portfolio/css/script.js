@@ -12,3 +12,4 @@ function changeImage() {
             imageCount++;
         }
     }
+
