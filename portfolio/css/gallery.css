@@ -16,7 +16,7 @@
     height:auto;
     margin: 10px;
 }
-.bigpic {
+#bigpic #bigPicImg {
     display: inline;
-    width:70%;
+    width:80%;
 }
