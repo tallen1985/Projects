@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-align: center;
+    background-color: beige;
+}
+#inputBox{
+    margin: 20px 0;
+}
+#resultsBox {
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin: 10px auto;
+    justify-content: center;
+
+    border-radius: 5px;
+    min-height: 100px;
+    width: 90%;
+}
+#resultsBox #resultsHeading {
+    display: block;
+    position:absolute;
+    top: -17px;
+    left: 25px;
+    background-color: beige;
+}
+.breweryBox {
+    margin: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 250px;
+    width: 25%;
+    border radius 5px;
+    padding: 10px;
+    z-index: 5;
+    box-shadow: black 5px 5px 5px;
+}
