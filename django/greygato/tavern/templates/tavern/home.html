@@ -1,0 +1,22 @@
+{%extends './base.html'%}
+
+{% block head%}
+<title>Welcome to the Grey Gato Tavern </title>
+{% endblock %}
+
+{%block content%}
+<p>
+  The Grey Gato tavern is an imaginary place that Jake is using to learn how to use Django.
+</p>
+
+<img src="static/cat.jpeg" />
+
+<div id="hoursBox">
+  <p> We are open: </p>
+  <ul>
+  {% for day in day %}
+    <li>{{day.day}} at {{day.hours}}</li>
+  {%endfor%}
+  </ul>
+</div>
+{%endblock%}
