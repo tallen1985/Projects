@@ -1,5 +1,4 @@
 from django.db import models
-from django.db.models.fields import IntegerField
 
 # Create your models here.
 class Employee(models.Model):
@@ -14,8 +13,10 @@ class Employee(models.Model):
     
 class Menu(models.Model):
     name = models.CharField(max_length=20)
-    time_start = models.IntegerField
-    time_end = models.IntegerField
+    time_start = models.IntegerField(default=16)
+    time_end = models.IntegerField(default = 20)
+    def __str__(self):
+        return self.name
 
 class Menu_item(models.Model):
     name = models.CharField(max_length=20)

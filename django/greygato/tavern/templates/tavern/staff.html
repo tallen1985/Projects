@@ -8,5 +8,10 @@
 <p>
   Staff
 </p>
-
+{% for Employee in Employee %}
+  <p>
+    <strong>{{Employee.first_name}} {{Employee.last_name}}, {{Employee.position}}</strong> <br>
+    {{Employee.bio}}
+  </p>
+{% endfor %}
 {%endblock%}

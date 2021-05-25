@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Employee
 
 day = [
     {'day': 'Wednesday', 'hours' : '4pm'},
@@ -14,7 +14,8 @@ def index(request):
     return render(request, 'tavern/home.html', context)
 
 def staff(request):
-    return render(request, 'tavern/staff.html')
+    context = {'Employee' : Employee.objects.all()}
+    return render(request, 'tavern/staff.html', context)
 
 def menu(request):
     return render(request, 'tavern/menu.html')
