@@ -2,6 +2,7 @@ html, body {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     box-sizing: content-box;
+    text-align: center;
 }
 
 #header {
@@ -16,12 +17,10 @@ html, body {
 }
 .header-link-left {
     grid-column: 2 / span 1;
-    border: 1px solid black;
     margin-top:-50px;
 }
 .header-link-right {
     grid-column: 4 / span 1;
-    border: 1px solid black;
     margin-top:-50px;
 }
 
@@ -32,6 +31,9 @@ html, body {
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
+#header a:visited {
+    color:white;
+}
 #header-logo {
     grid-column: 3 / span 1;
 }
@@ -39,7 +41,37 @@ html, body {
     height:300px;
 }
 
+main {
+    margin-top: 150px;
+}
+
+.product-box {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 80%;
+    margin:auto;
+}
+.product-image {
+    grid-column: 1 / span 1;
+}
+.product-image img {
+    width: 80%;
+}
+.product-description {
+    grid-column: 2 / span 1;
+    text-align: left;
+}
+
+.about-box {
+    width: 80%;
+    margin: auto;
+}
+#fakeAnne {
+    width: 150px;
+}
+
 footer {
+    margin-top: 50px;
     text-align: left;
     font-size: .75rem;
 }
