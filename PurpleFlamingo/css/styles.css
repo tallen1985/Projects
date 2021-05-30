@@ -3,6 +3,7 @@ html, body {
     font-size: 16px;
     box-sizing: content-box;
     text-align: center;
+    background-color: hsla(71, 15%, 48%, .5);
 }
 
 #header {
@@ -12,7 +13,7 @@ html, body {
     align-items: center;
     text-align: center;
     height: 150px;
-    background-color: #8a7584;
+    background-color: #7b20a6;
     justify-content: space-evenly;
 }
 .header-link-left {
@@ -28,7 +29,7 @@ html, body {
     font-size: 1.2rem;
     font-weight: bold;
     color: #FFFFFF;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px #2d2c2a;
     text-decoration: none;
 }
 #header a:visited {
