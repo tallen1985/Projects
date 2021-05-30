@@ -1,0 +1,45 @@
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 10% 20% 40% 20% 10%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    background-color: #8a7584;
+    justify-content: space-evenly;
+}
+.header-link-left {
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+    margin-top:-50px;
+}
+.header-link-right {
+    grid-column: 4 / span 1;
+    border: 1px solid black;
+    margin-top:-50px;
+}
+
+#header a:link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+#header-logo {
+    grid-column: 3 / span 1;
+}
+#logo {
+    height:300px;
+}
+
+footer {
+    text-align: left;
+    font-size: .75rem;
+}
