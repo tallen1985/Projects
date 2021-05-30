@@ -66,11 +66,12 @@ main {
     width: 80%;
     margin: auto;
 }
-#fakeAnne {
-    width: 150px;
+#Anne {
+    width: 300px;
 }
 
 footer {
+    margin-left: 25px;
     margin-top: 50px;
     text-align: left;
     font-size: .75rem;
