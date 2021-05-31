@@ -27,7 +27,8 @@ p {
 #logo {
     height:250px;
     position: relative;
-    right: -250px;
+    right: -300px;
+    top: -100px
 }
 
 /* Navbar container */
@@ -65,6 +66,7 @@ p {
   .dropdown-content {
     display: none;
     position: absolute;
+    right: 60px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
