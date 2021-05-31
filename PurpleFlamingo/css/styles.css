@@ -140,3 +140,10 @@ html, body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  footer {
+    margin-left: 25px;
+    margin-top: 50px;
+    text-align: left;
+    font-size: .75rem;
+}
