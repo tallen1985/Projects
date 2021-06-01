@@ -1,32 +1,27 @@
-
-
 $(document).ready(() => {
     $('#link-home').on('click', () => {
         $('#home').show();
-        $('#home').siblings().hide();
-        $('.navbar').show();
-        
+        $('#products').hide();
+        $('#about').hide();
+        $('#contact').hide();
     })
     $('#link-products').on('click', () => {
-        $('#products').siblings().hide();
+        $('#home').hide();
         $('#products').show();
-        $('.navbar').show();
+        $('#about').hide();
+        $('#contact').hide();
     })
     $('#link-about').on('click', () => {
-        $('#about').siblings().hide();
+        $('#home').hide();
+        $('#products').hide();
         $('#about').show();
-        $('.navbar').show();
-
+        $('#contact').hide();
     })
     $('#link-contact').on('click', () => {
-        $('#contact').siblings().hide();
+        $('#home').hide();
+        $('#products').hide();
+        $('#about').hide();
         $('#contact').show();
-        $('.navbar').show();
     })
-    document.getElementById("hamburger").addEventListener("click", function(){
-        this.classList.toggle("active");
-        document.querySelector(".mobile-menu").classList.toggle("active");
-      });
-      
-      
+
 });
