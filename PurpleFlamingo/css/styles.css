@@ -52,7 +52,7 @@ html, body {
     height:250px;
     position: relative;
     right: -250px;
-    top: -100px
+    top: -100px;
 }
 
 #about img {
@@ -145,4 +145,32 @@ html, body {
     margin-left: 25px;
     text-align: left;
     font-size: .75rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    top: 0;
+    width: 100%;
+  }
+  .dropdown {
+  }
+
+  .BigPicture {
+    width: 98%;
+    height: 700px;
+    margin: 0 auto;
+  }
+    .BigPicture #home-text {
+      left: 0;
+      top: 10px;
+    }
+  #logo {
+    height: 200px;
+    right: 0;
+    top: 0;
+  }
+  .content {
+    overflow-y: scroll;
+  }
+  
 }

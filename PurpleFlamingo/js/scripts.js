@@ -1,27 +1,28 @@
+
+
 $(document).ready(() => {
     $('#link-home').on('click', () => {
         $('#home').show();
-        $('#products').hide();
-        $('#about').hide();
-        $('#contact').hide();
+        $('#home').siblings().hide();
+        $('.navbar').show();
+        
     })
     $('#link-products').on('click', () => {
-        $('#home').hide();
+        $('#products').siblings().hide();
         $('#products').show();
-        $('#about').hide();
-        $('#contact').hide();
+        $('.navbar').show();
+
     })
     $('#link-about').on('click', () => {
-        $('#home').hide();
-        $('#products').hide();
+        $('#about').siblings().hide();
         $('#about').show();
-        $('#contact').hide();
+        $('.navbar').show();
+
     })
     $('#link-contact').on('click', () => {
-        $('#home').hide();
-        $('#products').hide();
-        $('#about').hide();
+        $('#contact').siblings().hide();
         $('#contact').show();
+        $('.navbar').show();
     })
 
 });
