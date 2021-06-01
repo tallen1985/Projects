@@ -11,7 +11,6 @@ $(document).ready(() => {
         $('#products').siblings().hide();
         $('#products').show();
         $('.navbar').show();
-
     })
     $('#link-about').on('click', () => {
         $('#about').siblings().hide();
@@ -24,5 +23,10 @@ $(document).ready(() => {
         $('#contact').show();
         $('.navbar').show();
     })
-
+    document.getElementById("hamburger").addEventListener("click", function(){
+        this.classList.toggle("active");
+        document.querySelector(".mobile-menu").classList.toggle("active");
+      });
+      
+      
 });
