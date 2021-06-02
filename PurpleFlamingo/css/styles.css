@@ -33,7 +33,6 @@ left: -150px;
 }
 
 .content {
-display: none;
 width: 80%;
 height: 90%;
 margin: 5px auto;
@@ -148,12 +147,6 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-  /* .navbar {
-    display:none;
-  }
-  .mobile-navbar {
-    display:block;
-  } */
 
   .BigPicture {
     width: 98%;
@@ -172,5 +165,14 @@ footer {
   .content {
     overflow-y: scroll;
   }
-  
+  .product-box {
+    display: block;
+    text-align: center;
+  }
+    .product-box .product-description {
+      text-align: center;
+    }
+    .product-box img {
+      width: 75%;
+    }
 }
