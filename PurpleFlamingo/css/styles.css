@@ -85,7 +85,13 @@ text-align: left;
   background-color: #333;
   font-family: Arial;
 }
-
+  .navbar p {
+    font-style: normal;
+    font-weight: bold;
+    margin: 14px 10px 14px 0;
+    color: white;
+    float:right;
+  }
 /* The dropdown container */
 .dropdown {
   float: left;
