@@ -8,7 +8,7 @@ body {
 #listContainer {
     width: 50%;
     border: 1px solid black;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: left;
 
 }
@@ -33,6 +33,13 @@ body {
         margin-top: 10px;
     }
 
+#addItem {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: cadetblue;
+    width: 200px;
+    margin: 20px auto;
+}
 #addForm {
     display: none;
 }
