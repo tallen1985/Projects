@@ -43,3 +43,6 @@ body {
 #addForm {
     display: none;
 }
+button.btn {
+    font-size: 2rem;
+}
