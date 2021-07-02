@@ -73,7 +73,7 @@ main {
 }
 .forecastDay {
     margin: 10px;
-    width: 80px;
+    width: 150px;
     border: 1px solid black;
 }
 .dayOfWeek {
@@ -89,4 +89,40 @@ main {
     width: 100%;
     height: 175px;
 
+}
+
+@media screen and (max-width:830px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header #currentWeather #currentLocation {
+        font-size: 1rem;
+        
+    }
+    header #currentWeather #currentTemperature {
+        font-size: 1.7rem;
+        margin-top: -24px;
+    }
+    header #currentWeather #currentTemperature span {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (max-width:630px) {
+    header h1 {
+        line-height: 32px;
+        font-size: 1.2rem;
+        padding-left: 25px;
+    }
+    header #currentWeather #currentLocation {
+        font-size: .9rem;
+        
+    }
+    header #currentWeather #currentTemperature {
+        font-size: 1.5rem;
+        margin-top: -24px;
+    }
+    header #currentWeather #currentTemperature span {
+        font-size: .7rem;
+    }
 }
