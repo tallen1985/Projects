@@ -31,10 +31,10 @@ function currentWeather(location) {
 
 const getForecast = (location) => {
 
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5&aqi=no&alerts=no`)
         .then(response => response.json())
         .then(weather => {
-            for(var x = 0; x < 3; x++){
+            for(var x = 0; x < 5; x++){
                 const forecastDay = weather.forecast.forecastday[x];
                 const icon = getIcon('1', forecastDay.day.condition.icon);
                 const element = document.createElement('div')
