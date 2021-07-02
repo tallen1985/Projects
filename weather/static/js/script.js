@@ -14,6 +14,12 @@ const newLocation = () => {
     currentWeather(weatherLocation);
 }
 
+const myLocationButton = () => {
+    weatherLocation = 'auto:ip'
+    getForecast(weatherLocation);
+    currentWeather(weatherLocation);
+}
+
 const getIcon = (is_day, code) => {
     let isDay = 'day';
     if (is_day == 0) {
