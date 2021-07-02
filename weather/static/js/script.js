@@ -1,5 +1,5 @@
 const apiKey = '1a306f57eaa04b66a65190330210107';
-let weatherLocation = '33901';
+let weatherLocation = '33912';
 
 const getIcon = (is_day, code) => {
     let isDay = 'day';
@@ -31,7 +31,7 @@ function currentWeather(location) {
 
 const getForecast = (location) => {
 
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`)
         .then(response => response.json())
         .then(weather => {
             for(var x = 0; x < 5; x++){
