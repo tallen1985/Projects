@@ -1,5 +1,5 @@
 const apiKey = '1a306f57eaa04b66a65190330210107';
-let weatherLocation = 'Glasgow';
+let weatherLocation = '33901';
 
 const getIcon = (is_day, code) => {
     let isDay = 'day';
