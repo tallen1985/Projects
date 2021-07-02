@@ -1,6 +1,19 @@
 const apiKey = '1a306f57eaa04b66a65190330210107';
 let weatherLocation = '33912';
 
+document.getElementById('inputLocation').addEventListener('click', () => {
+    document.getElementById('inputLocation').value = '';
+})
+
+const newLocation = () => {
+    const inputLocation = document.getElementById('inputLocation')
+    if (inputLocation.value != "Zip or City Name" && inputLocation.value != '') {
+        weatherLocation = inputLocation.value;
+    }
+    getForecast(weatherLocation);
+    currentWeather(weatherLocation);
+}
+
 const getIcon = (is_day, code) => {
     let isDay = 'day';
     if (is_day == 0) {
@@ -30,11 +43,11 @@ function currentWeather(location) {
 }
 
 const getForecast = (location) => {
-
+    document.getElementById('forecastBox').innerHTML = '';
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`)
         .then(response => response.json())
         .then(weather => {
-            for(var x = 0; x < 5; x++){
+            for(var x = 0; x < 3; x++){
                 const forecastDay = weather.forecast.forecastday[x];
                 const icon = getIcon('1', forecastDay.day.condition.icon);
                 const element = document.createElement('div')
