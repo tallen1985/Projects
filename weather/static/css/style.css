@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Benne', serif;
+    font-size: 16px;
+}
+
+header {
+    --header-height: 100px;
+    width: 100%;
+    display: inline-block;
+    background-image: linear-gradient(90deg, black, #5ef3f3);
+    color: whitesmoke;
+    height: var(--header-height);
+}
+    header h1 {
+        font-family: 'Benne', serif;
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 50px;
+        height: 100%;
+        width: 40%;
+        line-height: var(--header-height);
+        
+        display: inline-block;
+    }
+    header #currentWeather {
+        text-align: center;
+        position:fixed;
+        right: 0;
+        top: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        height: var(--header-height);
+    }
+        header #currentWeather #currentLocation {
+            font-size: 1.2rem;
+            
+        }
+        header #currentWeather #currentTemperature {
+            font-size: 2rem;
+            margin-top: -24px;
+        }
+        header #currentWeather #currentTemperature span {
+            font-size: 1rem;
+        }
+        header #currentWeather #currentIcon p {
+            margin-bottom: 0;
+        }
+main {
+    width: 100%;
+}
+#locationBox {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+#locationBox h3 {
+    margin-bottom: 0;
+}
+#forecastBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+.forecastDay {
+    margin: 10px;
+    width: 80px;
+    border: 1px solid black;
+}
+.dayOfWeek {
+    background-color: rgba(0,0,0, 0.5);
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+    height:20px;
+    width:100%;
+}
+.dailyForecast {
+    text-align: center;
+    width: 100%;
+    height: 175px;
+
+}

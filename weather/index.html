@@ -1,0 +1,31 @@
+<!Doctype HTML>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Portfolio Weather Forecast</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Weather Forecast</h1>
+        <div id="currentWeather">
+            <div id="currentLocation"></div>
+            <div id="currentTemperature"></div>
+            <div id="currentIcon"></div>
+        </div>
+    </header>
+    <main>
+        <div id="locationBox">
+            <h3>Enter Your Location</h3>
+            <input type='text' name= 'inputLocation' id='inputLocation' value="Zip or City Name"><br>
+            <button type="submit" id="submitButton">Get Forecast</button>
+        </div>
+        <div id="forecastBox">
+        </div>
+    </main>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

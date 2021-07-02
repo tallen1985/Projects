@@ -1,5 +1,4 @@
 # Weather Forecast APP
----
 *A portfolio project to display current, 5, and 7 day forecast*
 
 ## Requirements
