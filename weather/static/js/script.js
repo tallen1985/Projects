@@ -19,7 +19,7 @@ function currentWeather(location) {
     const currentLocation = document.getElementById('currentLocation');
     const currentTemperature = document.getElementById('currentTemperature');
     const currentIcon = document.getElementById('currentIcon')
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}}&aqi=no`)
         .then(response => response.json())
         .then(weather => {
             const icon = getIcon(weather.current.is_day, weather.current.condition.icon);
@@ -31,7 +31,7 @@ function currentWeather(location) {
 
 const getForecast = (location) => {
 
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`)
         .then(response => response.json())
         .then(weather => {
             for(var x = 0; x < 3; x++){
