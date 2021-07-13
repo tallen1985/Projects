@@ -36,27 +36,40 @@
             width: 100%;
         }
 
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+.infoBox {
+    width: 30%;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+    .infoBox img {
+        position: relative;
+        width: 100%;
+        
+        z-index: 1;
+        transition: filter 250ms;
+    }
+    .infoBox .showButton {
+        display: block;
+        margin: 10px auto;
+    }
+    .infoBox .stuffAbout {
+        font-family: 'Work Sans', sans-serif;
+        visibility: hidden;
+        position: absolute;
+        width: 250px;
+        top: 75px;
+        left: calc(50% - 125px);
+        color: white;
+        z-index: 2;
+        transition: visibility 100ms ease-in;
+    }
+    .infoBox .stuffAbout ul{
+        width: 75%;
+        padding-left: 0;
+        margin: 10px auto;
+        text-align: center;
+        list-style: none;
+    }
