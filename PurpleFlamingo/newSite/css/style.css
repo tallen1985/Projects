@@ -65,7 +65,7 @@ main {
     /* z-index: 1; */
 }
 #rotatingImage {
-    margin: 25px 0;
+    margin: 20px 0;
     position: relative;
     max-height: 35vw;
     opacity: 1;
