@@ -26,15 +26,12 @@ header {
 }
 #navBar {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     padding: 0;
     justify-content: space-evenly;
 }
 
 #navBar li {
-    padding: 10px 0;
-    position: relative;
     display: inline-block;
     flex: 0 1 150px;
     list-style: none;

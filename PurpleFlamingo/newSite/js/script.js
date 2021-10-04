@@ -19,3 +19,17 @@ let jumboTimer = window.setInterval(function () {
         jumbotron.dataset.index = 0
     }
 }, 4000);
+
+let spaceDropdown = document.getElementById('spaceDropdown');
+let dropdownContent = document.getElementById('spaceDropContent');
+spaceDropdown.addEventListener('mouseover', function() {
+    dropdownContent.style.display = "block";
+})
+spaceDropdown.addEventListener('mouseleave', function() {
+    dropdownContent.style.display = "none";
+});
+window.onclick = function(e) {
+    if (!e.target.matches('#spaceDropdown') || !e.target.matches(dropdownContent)) {
+        dropdownContent.style.display = "none";
+    }
+};
