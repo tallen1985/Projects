@@ -20,9 +20,15 @@ let jumboTimer = window.setInterval(function () {
 }, 4000);
 
 let spaceDropdown = document.getElementById('spaceDropdown');
+let dropdownContent = spaceDropdown.children[0];
 spaceDropdown.addEventListener('mouseover', function() {
-    spaceDropdown.children[0].style.display = "block";
+    dropdownContent.style.display = "block";
 })
 spaceDropdown.addEventListener('mouseleave', function() {
-    spaceDropdown.children[0].style.display = "none";
+    dropdownContent.style.display = "none";
 });
+window.onclick = function(e) {
+    if (!e.target.matches('#spaceDropdown') || !e.target.matches(dropdownContent)) {
+        dropdownContent.style.display = "none";
+    }
+};

@@ -11,46 +11,51 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: var(--white);
     border: 1px solid rgb(202, 202, 202);
     border-radius: 10px;
     text-align: center;
     margin: 10px auto;
     width: 90%;
+    align-items: center;
 }
 
+header {
+    width: 100%;
+}
 #navBar {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     padding: 0;
     justify-content: space-evenly;
 }
 
 #navBar li {
+    padding: 10px 0;
+    position: relative;
     display: inline-block;
     flex: 0 1 150px;
     list-style: none;
     font-weight: bold;
+    transition: all .2s ease-in-out;
 }
 
-#navBar li a {
-    display: inline-block;
+#navBar li:hover {
     color:darkslategray;
 }
 
 #jumbotron {
     position: relative;
-    display: block;
-    width: 100%;
+    display: inline-block;
+    flex: 6 0 300px;
     height: 40vw;
     
 }
 #jumbotron::before {
     content: "";
     position: absolute;
-    width: 100%;
-    
     background-image: url('../images/background.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -60,7 +65,7 @@ main {
     top: 0;
     bottom: 0;
     opacity: .3;
-    /* z-index: 1; */
+    z-index: 0;
 }
 #rotatingImage {
     margin: 20px 0;
@@ -71,6 +76,40 @@ main {
     border: 2px solid black;
     border-radius: 2px;
     box-shadow: 3px 3px 3px darkslategray;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position:relative;
+    background-color: var(--white);
+    margin: 10px;
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px darkslategray;
+    flex: 1 0 150px;
+}
+aside h3 {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 100%;
+    color: var(--white);
+    background-color: darkslategray;
+}
+
+aside img {
+    margin: 10px auto;
+    width: 150px;
+    padding: 10px;
+}
+aside #featuredItemDesc {
+    flex: 1 0 150px;
+    padding: 5px;
+}
+
+footer {
+    margin: 0 auto;
 }
 
 .dropdown {
@@ -99,7 +138,7 @@ main {
     border-radius: 5px;
     transition: all .2s;
 }
-.button:active {
+.button:active, .button:hover {
     background-color: darkslategray;
     color: var(--white);
 }
