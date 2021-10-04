@@ -33,6 +33,7 @@ header {
 }
 
 #navBar li {
+    padding: 10px 0;
     position: relative;
     display: inline-block;
     flex: 0 1 150px;
@@ -123,6 +124,9 @@ footer {
     position: absolute;
     padding: 0;
     z-index: 2;
+}
+#spaceDropdown:hover .dropdown {
+    display: block;
 }
 .dropdown li{
     width: 100%;
