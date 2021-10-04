@@ -42,7 +42,7 @@ header {
     transition: all .2s ease-in-out;
 }
 
-#navBar li:hover {
+#navBar li:hover a {
     color:darkslategray;
 }
 
@@ -51,7 +51,7 @@ header {
     display: inline-block;
     flex: 6 0 300px;
     height: 40vw;
-    
+    color: black;
 }
 #jumbotron::before {
     content: "";
@@ -64,7 +64,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: .3;
+    opacity: .2;
     z-index: 0;
 }
 #rotatingImage {
@@ -76,6 +76,10 @@ header {
     border: 2px solid black;
     border-radius: 2px;
     box-shadow: 3px 3px 3px darkslategray;
+}
+#jumbotron div {
+    opacity: 1;
+    padding: 20px;
 }
 
 aside {
@@ -109,6 +113,7 @@ aside #featuredItemDesc {
 }
 
 footer {
+    width: 100%;
     margin: 0 auto;
 }
 
