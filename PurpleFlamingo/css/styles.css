@@ -39,7 +39,7 @@ margin: 5px auto;
 color: black;
 background-color: hsla(0,0%,100%, .75);
 border: 2px solid black;
-box-shadow: 3px 3px black;
+box-shadow: 3px 3px 3px black;
 border-radius: 5px;
 }
 .content h1, .content p {
