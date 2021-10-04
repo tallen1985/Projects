@@ -19,16 +19,10 @@ let jumboTimer = window.setInterval(function () {
     }
 }, 4000);
 
-// let spaceDropdown = document.getElementById('spaceDropdown');
-// let dropdownContent = spaceDropdown.children[0];
-// spaceDropdown.addEventListener('mouseover', function() {
-//     dropdownContent.style.display = "block";
-// })
-// spaceDropdown.addEventListener('mouseleave', function() {
-//     dropdownContent.style.display = "none";
-// });
-// window.onclick = function(event) {
-//     if (!event.target.matches(dropdownContent)) {
-//       dropdownContent.style.display = 'none';
-//     }
-//   }
+let spaceDropdown = document.getElementById('spaceDropdown');
+spaceDropdown.addEventListener('mouseover', function() {
+    spaceDropdown.children[0].style.display = "block";
+})
+spaceDropdown.addEventListener('mouseleave', function() {
+    spaceDropdown.children[0].style.display = "none";
+});
