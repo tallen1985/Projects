@@ -1,6 +1,7 @@
 const jumbotron = document.getElementById('jumbotron');
 const navBar = document.getElementById('navBar')
 const rotatingImage = document.getElementById('rotatingImage')
+let links = document.getElementsByTagName('a');
 
 let imageUrls = [
     './images/dad-astronaut.jpeg',
@@ -18,17 +19,3 @@ let jumboTimer = window.setInterval(function () {
         jumbotron.dataset.index = 0
     }
 }, 4000);
-
-// let spaceDropdown = document.getElementById('spaceDropdown');
-// let dropdownContent = spaceDropdown.children[0];
-// spaceDropdown.addEventListener('mouseover', function() {
-//     dropdownContent.style.display = "block";
-// })
-// spaceDropdown.addEventListener('mouseleave', function() {
-//     dropdownContent.style.display = "none";
-// });
-// window.onclick = function(event) {
-//     if (!event.target.matches(dropdownContent)) {
-//       dropdownContent.style.display = 'none';
-//     }
-//   }

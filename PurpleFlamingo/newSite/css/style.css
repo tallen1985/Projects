@@ -39,17 +39,17 @@ header {
     flex: 0 1 150px;
     list-style: none;
     font-weight: bold;
-    transition: all .2s ease-in-out;
 }
 
-#navBar li:hover {
+#navBar li a {
+    display: inline-block;
     color:darkslategray;
 }
 
 #jumbotron {
     position: relative;
     display: inline-block;
-    flex: 5 0 300px;
+    flex: 6 0 300px;
     height: 40vw;
     
 }
@@ -80,7 +80,7 @@ header {
 
 aside {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     position:relative;
     background-color: var(--white);
@@ -90,6 +90,7 @@ aside {
     box-shadow: 3px 3px 3px darkslategray;
     flex: 1 0 150px;
 }
+
 aside h3 {
     margin: 0 auto;
     padding: 10px 0;
@@ -99,7 +100,7 @@ aside h3 {
 }
 
 aside img {
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
     width: 150px;
     padding: 10px;
 }
@@ -125,9 +126,6 @@ footer {
     padding: 0;
     z-index: 2;
 }
-#spaceDropdown:hover .dropdown {
-    display: block;
-}
 .dropdown li{
     width: 100%;
     padding: 0;
@@ -141,7 +139,13 @@ footer {
     border-radius: 5px;
     transition: all .2s;
 }
-.button:active, .button:hover {
+.button:active {
     background-color: darkslategray;
     color: var(--white);
+}
+@media screen and (hover:hover) {
+    .button:hover {
+        background-color: darkslategray;
+        color: var(--white);
+    }
 }
