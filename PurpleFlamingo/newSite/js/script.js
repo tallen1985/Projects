@@ -21,7 +21,7 @@ let jumboTimer = window.setInterval(function () {
 }, 4000);
 
 hamburger.addEventListener('click', (e) => {
-    e.stopPropagation();
+   e.stopPropagation();
    navBar.style.visibility = "visible";
    navBar.style.opacity = '1';
 });
@@ -30,9 +30,7 @@ document.addEventListener('click', (e) => {
 
     if (navBar.style.visibility = 'visible'){
         if (element !== document.getElementById('navBar')) {
-            navBar.style.visibility = 'hidden';
-            navBar.style.opacity = 0;
+            navBar.removeAttribute('style')
         }
     }
-    
 })
