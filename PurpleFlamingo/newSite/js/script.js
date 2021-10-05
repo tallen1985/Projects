@@ -1,6 +1,7 @@
 const jumbotron = document.getElementById('jumbotron');
-const navBar = document.getElementById('navBar')
-const rotatingImage = document.getElementById('rotatingImage')
+const navBar = document.getElementById('navBar');
+const rotatingImage = document.getElementById('rotatingImage');
+const hamburger = document.getElementById('hamburger');
 
 let imageUrls = [
     './images/dad-astronaut.jpeg',
@@ -19,16 +20,19 @@ let jumboTimer = window.setInterval(function () {
     }
 }, 4000);
 
-let spaceDropdown = document.getElementById('spaceDropdown');
-let dropdownContent = spaceDropdown.children[0];
-spaceDropdown.addEventListener('mouseover', function() {
-    dropdownContent.style.display = "block";
-})
-spaceDropdown.addEventListener('mouseleave', function() {
-    dropdownContent.style.display = "none";
+hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+   navBar.style.visibility = "visible";
+   navBar.style.opacity = '1';
 });
-window.onclick = function(e) {
-    if (!e.target.matches('#spaceDropdown') || !e.target.matches(dropdownContent)) {
-        dropdownContent.style.display = "none";
+document.addEventListener('click', (e) => {
+    let element = e.target;
+
+    if (navBar.style.visibility = 'visible'){
+        if (element !== document.getElementById('navBar')) {
+            navBar.style.visibility = 'hidden';
+            navBar.style.opacity = 0;
+        }
     }
-};
+    
+})
